@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp82ZOiF-Ob-6CjeXbqWv2sJxilTrI6UyFZg&s"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/b59d70ffce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Ticker AI</title>
+  </head>
+  <body class="bg-white dark:bg-gray-900 dark:text-[#7f7d7d]">
+    <!-- this is Header-Section start -->
+    <header class="header-section mx-0 md:mx-14 py-2 md:py-4">
+      <nav class="nav-flex">
+        <div class="flex justify-center items-center gap-1 md:gap-3">
+          <a href="index.html">
+            <img
+              src="Images/logo/tickerAI-logo 1.png"
+              alt="Logo"
+              class="w-10 md:w-fit"
+            />
+          </a>
+          <p class="text-[7px] md:text-sm dark:text-white select-none">
+            A Mark Cuban Company <br />
+            AI-based Financial Market News Aggregator
+          </p>
+        </div>
+
+        <div class="flex gap-3 md:gap-6 items-center justify-center">
+          <a href="news.html">
+            <button class="nav-button">Personalize News</button>
+          </a>
+          <div class="flex items-center gap-3 md:gap-6">
+            <button type="button" class="nav-profile">IK</button>
+            <button
+              type="button"
+              class="size-5 hover:animate-pulse"
+              id="switch"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 hover:scale-150 transition-all dark:text-blue-900"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- this is Header-Section end -->
+
+    <!-- this is Banner-Section start -->
+    <section class="banner-flex">
+      <h1 class="banner-h">tickerAI</h1>
+      <div class="banner-search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 bg-white p-1 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <input
+          type="search"
+          name=""
+          id=""
+          placeholder="Search any market topic..."
+          class="w-full outline-none ps-1"
+        />
+      </div>
+      <p class="text-xs text-gray-300 pt-2 md:pt-4 select-none">
+        There are 6 articles available for your preferences
+      </p>
+    </section>
+    <!-- this is Banner-Section end -->
+
+    <!-- this is News-Section start -->
+    <div class="news-grid">
+      <section class="news-grid-left">
+        <div class="news-grid-caption">
+          <h3 class="news-grid-caption-h">All NEWS</h3>
+          <div class="flex gap-2 items-center">
+            <p>Filter By:</p>
+            <p class="font-bold">Stocks</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-[#333333] font-bold text-xl dark:text-[#7f7d7d]">Individual Stocks</h2>
+
+          <div class="card-flex">
+            <div class="card-all">
+              <img src="images/news/Rectangle 6.png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Dow jones</button>
+                  <button class="card-button">Nasdaq</button>
+                  <button class="card-button">S & P 500</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Nzd/usd forex technical analysis - traders will be
+                    monitoring fed for future rate hike clues
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Shouvik Nath</b></b>
+                </div>
+              </div>
+            </div>
+            <div class="card-all">
+              <img src="images/news/Rectangle 7.png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Dow jones</button>
+                  <button class="card-button">Nasdaq</button>
+                  <button class="card-button">S & P 500</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Rupee inches 5 paise higher to 77.99 against us dollar in
+                    early trade
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Amado</b></b>
+                </div>
+              </div>
+            </div>
+            <div class="card-all">
+              <img src="images/news/Rectangle 8.png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Wall street</button>
+                  <button class="card-button">Analyst coverage</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Rupee inches 5 paise higher to 77.99 against us dollar in
+                    early trade
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Amado</b></b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br /><br />
+
+        <div>
+          <h2 class="text-[#333333] font-bold text-xl dark:text-[#7f7d7d]">Stock Sectors</h2>
+
+          <div class="card-flex">
+            <div class="card-all">
+              <img src="images/news/Rectangle 6 (1).png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Dow jones</button>
+                  <button class="card-button">Nasdaq</button>
+                  <button class="card-button">S & P 500</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Nzd/usd forex technical analysis - traders will be
+                    monitoring fed for future rate hike clues
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Shouvik Nath</b></b>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-all">
+              <img src="images/news/Rectangle 7 (1).png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Dow jones</button>
+                  <button class="card-button">Nasdaq</button>
+                  <button class="card-button">S & P 500</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Rupee inches 5 paise higher to 77.99 against us dollar in
+                    early trade
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Amado</b></b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br /><br /><br />
+
+        <div>
+          <h2 class="text-[#333333] font-bold text-xl dark:text-[#7f7d7d]">Stock Market Topics</h2>
+ 
+          <div class="card-flex">
+            <div class="card-all">
+              <img src="images/news/Rectangle 6 (2).png" alt="" />
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-1 pt-2 md:pt-4">
+                  <button class="card-button">Dow jones</button>
+                  <button class="card-button">Nasdaq</button>
+                  <button class="card-button">S & P 500</button>
+                </div>
+                <div>
+                  <h3 class="card-h">
+                    Rupee inches 5 paise higher to 77.99 against us dollar in
+                    early trade
+                  </h3>
+                  <p class="card-p">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet...
+                  </p>
+                </div>
+                <div class="flex gap-6">
+                  <p class="text-[#616161]">06 September 2022</p>
+                  <b>By <b class="text-[#5677AC]">Shouvik Nath</b></b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-grid-right">
+        <div class="news-grid-caption">
+          <h3 class="news-grid-caption-h">FEATURED</h3>
+        </div>
+
+        <div>
+          <h2 class="text-[#333333] font-bold text-xl dark:text-[#7f7d7d]">Daily Rundowns</h2>
+
+          <div class="flex flex-col">
+            <div class="features-div">
+              <div>
+                <p class="font-bold">Earnings:</p>
+
+                <div class="rundowns-grid">
+                  <p class="rundowns">csan</p>
+                  <p class="rundowns">alya</p>
+                  <p class="rundowns">gato</p>
+                  <p class="rundowns">css</p>
+                  <p class="rundowns">vzla</p>
+                  <p class="rundowns">mfh</p>
+                </div>
+
+                <div>
+                  <p class="font-bold">Movers:</p>
+                  <div class="rundowns-grid">
+                    <p class="rundowns">rev</p>
+                    <p class="rundowns">petv</p>
+                    <p class="rundowns">rytm</p>
+                    <p class="rundowns">srrk</p>
+                    <p class="rundowns">vera</p>
+                    <p class="rundowns">kzia</p>
+                    <p class="rundowns">sym</p>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="font-bold">Technicals:</p>
+                  <div class="rundowns-grid">
+                    <p class="rundowns">bearish</p>
+                    <p class="rundowns md:ms-4">regn</p>
+                    <p class="rundowns md:ms-3">tsla</p>
+                    <p class="rundowns md:ms-2">mcd</p>
+                    <p class="rundowns">bullish</p>
+                    <p class="rundowns md:ms-4">uso</p>
+                    <p class="rundowns md:ms-3">sedg</p>
+                    <p class="rundowns md:ms-2">enph</p>
+                    <p class="rundowns">shop</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-grid-right-features">
+          <div>
+            <img
+              class="w-full"
+              src="Images/aside-bar/Rectangle 182.png"
+              alt=""
+            />
+            <p
+              class="text-center mt-2 font-semibold text-[#121212] px-2 dark:text-[#7f7d7d]"
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </div>
+
+        <div class="news-grid-right-features">
+          <div>
+            <img
+              class="w-full"
+              src="Images/aside-bar/Rectangle 183.png"
+              alt=""
+            />
+            <p
+              class="text-center mt-2 font-semibold text-[#121212] px-2 dark:text-[#7f7d7d]"
+            >
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </div>
+
+        <div class="news-grid-right-features">
+          <div>
+            <img
+              class="w-full"
+              src="Images/aside-bar/Rectangle 184.png"
+              alt=""
+            />
+            <p class="text-center mt-2 font-semibold text-[#121212] px-2 dark:text-[#7f7d7d]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint.
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <!-- this is News-Section end -->
+
+    <footer
+      class="select-none w-full text-center pb-3 pt-3 dark:text-[#cccccc] dark:bg-gray-800"
+    >
+      all rights reserves to TickerAI - 2024
+    </footer>
+
+    <script>
+      const htmlTag = document.getElementById("htmlTag");
+      document.getElementById("switch").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>

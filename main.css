@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-flex {
+  @apply container flex mx-auto justify-between items-center;
+}
+.nav-button {
+  @apply bg-[#5677AC] text-white rounded-md py-1 md:py-2 px-3 md:px-4 text-xs md:text-lg font-semibold hover:transition-all hover:bg-[#42669e] hover:scale-105 hover:translate-y-1 dark:text-[#cccccc];
+}
+
+.nav-profile {
+  @apply text-[#5677AC] bg-[#5677AC26] text-lg md:text-xl font-bold size-9 md:size-10 hover:scale-110 hover:transition-all hover:bg-[#202d4226] rounded-full items-center justify-center;
+}
+
+.banner-flex {
+  @apply flex flex-col mx-0 md:mx-14 px-3 py-20 md:py-32 justify-center items-center bg-[url(https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-no-repeat bg-cover;
+}
+
+.banner-h {
+  @apply bg-white text-4xl md:text-7xl font-bold italic px-1 md:px-3 mb-2 md:mb-4 dark:bg-gray-800;
+}
+
+.banner-search {
+  @apply flex w-full md:w-1/2 bg-white p-2 md:p-4 rounded-md mt-4 md:mt-8 hover:ring;
+}
+
+.card-button {
+  @apply bg-[#333333] px-1.5 uppercase text-white;
+}
+
+.card-flex {
+  @apply flex flex-col gap-10 md:gap-6 mt-2 md:mt-3;
+}
+
+.card-all {
+  @apply flex flex-col md:flex-row gap-4 border p-2 md:p-4 pb-3 md:pb-5 border-[#DDE2E5] dark:border-[#cccccc] rounded hover:scale-105 transition-all duration-200 ;
+}
+
+.card-h {
+  @apply text-[#333333] font-bold dark:text-[#cccccc];
+}
+
+.card-p {
+  @apply text-[#616161] pt-1 dark:text-[#7f7d7d];
+}
+
+.news-grid {
+  @apply md:container grid grid-cols-12 gap-8 mx-auto px-4 md:px-0 pt-10;
+}
+
+.news-grid-left {
+  @apply md:col-span-9 col-span-12 md:ms-4 pb-2 md:pb-6;
+}
+
+.news-grid-right {
+  @apply md:col-span-3 col-span-12 md:me-4 pb-2 md:pb-6;
+}
+
+.news-grid-caption {
+  @apply flex justify-between items-center border-b-2 md:border-b-[3px] border-b-[#333333] dark:border-b-[#cccccc] pb-1.5 md:pb-2.5 mb-4 md:mb-6;
+}
+
+.news-grid-caption-h {
+  @apply font-bold text-xl md:text-2xl text-[#333333] dark:text-[#7f7d7d];
+}
+
+.rundowns{
+  @apply bg-[#5677AC26] px-2 hover:animate-pulse duration-200 cursor-pointer text-center w-fit;
+}
+
+.rundowns-grid{
+  @apply uppercase flex md:grid md:grid-cols-4 gap-2 pt-2;
+}
+
+.features-div{
+  @apply flex flex-col gap-6 my-6 md:m-7 px-10 mb-8 md:mx-0;
+}
+
+.news-grid-right-features{
+  @apply features-div hover:scale-105 transition-all duration-200 cursor-pointer;
+}
+
+.news-tab-caption{
+  @apply flex flex-col justify-between border-b-2 md:border-b-[3px] border-b-[#333333] dark:border-b-[#cccccc] mx-11 md:mx-36 pb-2 mb-6 pt-4 md:pt-8;
+}
+
+.news-tab-div-buttons{
+  @apply text-[#333333] font-semibold bg-[#E6EBF3] rounded-full py-2 md:py-3 dark:bg-gray-600 dark:text-[#cccccc] select-none cursor-pointer;
+}
+
+.news-tab-div{
+  @apply bg-white h-1/2 w-1/2 md:w-1/4 mx-auto text-center rounded p-8 drop-shadow-lg dark:bg-gray-700;
+}
