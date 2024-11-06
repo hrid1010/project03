@@ -1,13 +1,15 @@
-import { resolve } from "path";
-import { defineConfig } from "vite";
+import { fileURLToPath } from 'url';
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        news: resolve(__dirname, "news.html"),
-      },
-    },
-  },
+        main: resolve(__dirname, 'index.html')
+      }
+    }
+  }
 });
