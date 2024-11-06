@@ -5,8 +5,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(dirname, "index.html"),
-        news: resolve(dirname, "news.html"),
+        main: resolve("index.html"),
+        news: resolve("news.html"),
       },
     },
   },
